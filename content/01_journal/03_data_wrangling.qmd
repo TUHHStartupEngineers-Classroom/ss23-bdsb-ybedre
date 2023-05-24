@@ -1,8 +1,31 @@
+---
+title: "03 Data Wrangling"
+author: "Yashas Bedre Raghavendra"
+date: "2023-05"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    df_print: paged
+    collapsed: false
+    number_sections: true
+    toc_depth: 3
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
+```
+
+# Third Assignment : Data Wrangling
+
+```{r}
 library(vroom)
 library(tictoc)
 library(tidyverse)
 library(data.table)
 
+```
 col_types <- list(
   id = col_character(),
   type = col_character(),
